@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicóloga Griselda Santos | UANL - Monterrey & En Línea</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --morado-oscuro: #4a148c;
+            --morado-medio: #7b1fa2;
+            --lila: #e1bee7;
+            --lila-claro: #f3e5f5;
+            --blanco: #ffffff;
+            --texto: #333333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--texto);
+            line-height: 1.6;
+            background-color: var(--blanco);
+        }
+
+        /* Navegación */
+        nav {
+            background: var(--blanco);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo-text { color: var(--morado-oscuro); font-weight: 600; font-size: 1.2rem; }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 2rem; }
+        nav ul li a { text-decoration: none; color: var(--morado-oscuro); font-weight: 400; transition: 0.3s; }
+        nav ul li a:hover { color: var(--morado-medio); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--lila-claro) 0%, var(--blanco) 100%);
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .logo-container img {
+            max-width: 300px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+        }
+
+        h1 { font-family: 'Playfair Display', serif; color: var(--morado-oscuro); font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; max-width: 700px; margin: 0 auto 2rem; color: var(--morado-medio); }
+
+        /* Botones */
+        .btn {
+            background: var(--morado-medio);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn:hover { background: var(--morado-oscuro); transform: translateY(-2px); }
+
+        /* Secciones */
+        section { padding: 80px 5%; }
+        .section-title { text-align: center; font-family: 'Playfair Display', serif; color: var(--morado-oscuro); margin-bottom: 3rem; font-size: 2rem; }
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--lila-claro);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card:hover { transform: scale(1.05); background: var(--lila); }
+
+        /* Footer */
+        footer {
+            background: var(--morado-oscuro);
+            color: var(--lila-claro);
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .footer-links a { color: var(--lila); margin: 0 10px; text-decoration: none; font-size: 0.9rem; }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            nav ul { margin-top: 1rem; }
+            nav ul li { margin: 0 10px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-text">Griselda Santos | Psicóloga</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="logo-container">
+            <!-- Reemplaza 'URL_DE_TU_IMAGEN' con el enlace a tu logo guardado -->
+            <img src="LogoGrisSantos.png" alt="Logo Alma Rivera">
+        </div>
+        <h1>Tu bienestar emocional es mi prioridad</h1>
+        <p>Egresada de la <strong>UANL</strong>. Brindo acompañamiento profesional en Monterrey y sesiones virtuales para todo el mundo.</p>
+        <a href="#contacto" class="btn">Agendar Sesión</a>
+    </section>
+
+    <section id="servicios">
+        <h2 class="section-title">Servicios Terapéuticos</h2>
+        <div class="grid-servicios">
+            <div class="card">
+                <h3>Terapia Presencial</h3>
+                <p>Ubicada en el corazón de Monterrey, N.L. en un ambiente seguro y privado.</p>
+            </div>
+            <div class="card">
+                <h3>Terapia en Línea</h3>
+                <p>Sesiones por videollamada con la misma calidez y efectividad profesional.</p>
+            </div>
+            <div class="card">
+                <h3>Enfoque UANL</h3>
+                <p>Atención basada en evidencia científica y calidez humana institucional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion" style="background-color: var(--lila-claro);">
+        <div style="text-align: center;">
+            <h2 class="section-title">Trayectoria Académica</h2>
+            <p style="margin-bottom: 2rem;">Comprometida con la actualización constante para ofrecerte las mejores herramientas.</p>
+            <!-- Este es el link solicitado para ver sus diplomados -->
+            <a href="https://psicologia.uanl.mx" target="_blank" class="btn" style="background: transparent; border: 2px solid var(--morado-oscuro); color: var(--morado-oscuro);">Ver Diplomados y Cursos</a>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p style="font-size: 1.5rem; font-family: 'Playfair Display';">Psic. Griselda Santos</p>
+        <p>Monterrey, N.L. | Atención en Línea</p>
+        <p style="margin: 15px 0;">contacto@GriseldaSantosPsicologa.com</p>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">© 2024 Orgullosamente UANL. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
